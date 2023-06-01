@@ -16,7 +16,7 @@ jobs:
         npm install
         npm run-script build
     - name: Deploy
-      uses: Uhanxu/ActionDemo@master
+      uses: Uhanxu/ActionDemo
       with:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: gh-pages
