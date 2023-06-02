@@ -7,7 +7,7 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
-  "homepage": "https://github.com/Uhanxu/ActionDemo",
+  "homepage": "https://github.com/uhanxu",
   "dependencies": {
     "core-js": "^3.8.3",
     "vue": "^3.2.13"
