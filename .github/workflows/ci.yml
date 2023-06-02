@@ -11,13 +11,15 @@ jobs:
       uses: actions/checkout@master
       with:
         persist-credentials: false
-    - name: Install and Build
-      run: |
-        npm install
-        npm run-script build
-    - name: Deploy
+        
+    - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@v4
-      with:
+      env:
         ACCESS_TOKEN: ${{ secrets.ACTIONDEMO }}
         BRANCH: gh-pages
         FOLDER: dist
+        BUILD_SCRIPT: npm install && npm run build
+        
+        
+        
+
